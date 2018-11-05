@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android"
+    id="nlscan-plugin-barcodescanner" version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>nlscan barcode scanner plugin</name>
+    <description>Cordova plugin to interface with NLSCAN barcode scanners (on Android)</description>
+    <js-module name="BarcodeScanner" src="www/BarcodeScanner.js">
+        <clobbers target="nlscan.plugins.barcodescanner" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="BarcodeScanner">
+                <param name="onload" value="true" />
+                <param name="android-package"
+                    value="com.nlscan.cordova.plugin.barcodescanner.BarcodeScanner" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/BarcodeScanner.java"
+            target-dir="src/com/nlscan/cordova/plugin/barcodescanner/" />
+    </platform>
+</plugin>

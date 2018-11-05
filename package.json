@@ -1,0 +1,20 @@
+{
+  "name": "nlscan-plugin-barcodescanner",
+  "version": "0.0.1",
+  "description": "\n\t\tCordova plugin to interface with NLSCAN barcode scanners (on Android)\n\t",
+  "cordova": {
+    "id": "nlscan-plugin-barcodescanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+   "barcode",
+    "scanner",
+    "nlscan",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "alan",
+  "license": "MIT"
+}
