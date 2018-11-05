@@ -4,6 +4,8 @@ This is a cordova plugin for newland MT65,MT90.
 
 You can install it to your cordova app and use offered js api to get scanning result or change scanner's setting.
 
+Use sample:https://github.com/feifly6666/CordovaPluginDemo
+
 # How to install
  ①Download the plugin and extract it.
  
